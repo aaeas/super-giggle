@@ -1,13 +1,14 @@
 // Assignment code here
 function generatePassword() {
   console.log("In Generate Password");
-  var userInput = window.prompt("How many characters do you want?")
+  var userInput = window.prompt("How many characters would you like? Choose between 8-128.")
   console.log("User entered: "+ userInput);
   // we need a choice (conditional Statement)
-  if(userInput.length < 8) {
+  if(userInput.length > 8) {
     console.log("Length not vaild")
-  } else {
+  } else {userInput.length > 8 === < 128)
     console.log("Length is valid")
+    var userInput = window.prompt()
   }
 }
 
@@ -21,6 +22,7 @@ function writePassword() {
   console.log("writePassword function called");
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
