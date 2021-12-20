@@ -59,7 +59,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
   console.log('Answer was not saved to the database.');
 }
 
-}
+
 for (let i = 0; i < 128; i++) {
   text += userInput[i] + "<br>";
 }
@@ -75,9 +75,9 @@ for (let i = 0, len = numbers.length, text = ""; i < len; i++) {
 for (let i = 0, len = specialCharacters.length, text = ""; i < len; i++) {
   text += specialCharacters[i] + "<br>";
 }  
-}
-return myPass;
 
+return myPass;
+}
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
 
