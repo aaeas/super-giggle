@@ -75,8 +75,8 @@ for (let i = 0, len = numbers.length, text = ""; i < len; i++) {
 for (let i = 0, len = specialCharacters.length, text = ""; i < len; i++) {
   text += specialCharacters[i] + "<br>";
 
-  return myPass;
 }  
+return myPass;
 
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
