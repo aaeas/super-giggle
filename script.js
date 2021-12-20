@@ -4,14 +4,16 @@ function generatePassword() {
   var userInput = window.prompt("How many characters would you like? Choose between 8-128.")
   console.log("User entered: "+ userInput);
   // we need a choice (conditional Statement)
-  if(userInput.length > 8) {
-    console.log("Length not vaild")
-  } else {userInput.length > 8 === < 128)
-    console.log("Length is valid")
-    var userInput = window.prompt()
+  if (userInput < 8) {
+    alert("Length not vaild")
+    return null;
+  }
+
+  if (userInput > 128 ){
+    alert("Length is valid")
+    return null;
   }
 }
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
