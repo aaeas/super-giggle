@@ -62,18 +62,23 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 
 for (let i = 0; i < 128 >8; i++) {
   text += userInput[i] + "<br>";
+  console.log('number was input');
 }
 for (let i = 0, len = upperCaseLetters.length, text = ""; i < len; i++) {
   text += upperCaseLetters[i] + "<br>";
+  console.log('upper case letter');
 }
 for (let i = 0, len = lowerCaseLetters.length, text = ""; i < len; i++) {
   text += lowerCaseLetters[i] + "<br>";
+  console.log('lower case letter');
 }
 for (let i = 0, len = numbers.length, text = ""; i < len; i++) {
   text += numbers[i] + "<br>";
+  console.log('number');
 }
 for (let i = 0, len = specialCharacters.length, text = ""; i < len; i++) {
   text += specialCharacters[i] + "<br>";
+  console.log('special character');
 }  
 
 return myPass;
