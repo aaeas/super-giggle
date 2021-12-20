@@ -1,5 +1,7 @@
 // Assignment code here
 function generatePassword() {
+
+var myPass= "";
   console.log("In Generate Password");
   var userInput = window.prompt("How many characters would you like? Choose between 8-128.")
   console.log("User entered: "+ userInput);
@@ -14,7 +16,7 @@ function generatePassword() {
     return null;
   }
 //Would you like capital letters?
-var userInput = window.confirm("Would you like capital letters?")
+var userInput= window.confirm("Would you like capital letters?")
 console.log("User entered: "+ userInput);
 const upperCaseLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' ];
 if (confirm('Are you sure you want to save this thing into the database?')) {
@@ -46,7 +48,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 
 //would you like special characters?
 
-var userInput = window.confirm("Would you like special characters? (!, @, #, $, %, ^, &, *")
+var userInput = window.confirm("Would you like special characters? (!, @, #, $, %, ^, &, *)")
 console.log("User entered: "+ userInput);
 const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*' ];
 if (confirm('Are you sure you want to save this thing into the database?')) {
@@ -55,6 +57,14 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 } else {
   console.log('Answer was not saved to the database.');
 }
+for (let i = 0; i < 1; i++) {
+  console.log('How many characters would you like? Choose between 8-128.');
+  console.log('Would you like capital letters?')
+  console.log('Would you like lowercase letters?')
+  console.log('Would you like numbers? (0-9)')
+  console.log('Would you like special characters? (!, @, #, $, %, ^, &, *)')
+}
+return myPass;
 }
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
