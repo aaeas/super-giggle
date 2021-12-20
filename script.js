@@ -13,7 +13,6 @@ function generatePassword() {
     alert("Length is valid")
     return null;
   }
-}
 //Would you like capital letters?
 var userInput = window.confirm("Would you like capital letters?")
 console.log("User entered: "+ userInput);
@@ -25,7 +24,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
   console.log('Answer was not saved to the database.');
 }
 //Would you like lower case letters?
-var userInput = window.confirm("Would you like lower case letters?")
+var userInput = window.confirm("Would you like lowercase letters?")
 console.log("User entered: "+ userInput);
 const lowerCaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k' ];
 if (confirm('Are you sure you want to save this thing into the database?')) {
@@ -35,7 +34,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
   console.log('Answer was not saved to the database.');
 }
 //Would you like numbers?
-var userInput = window.confirm("Would you like numbers? 0-9 ")
+var userInput = window.confirm("Would you like numbers? (0-9) ")
 console.log("User entered: "+ userInput);
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
 if (confirm('Are you sure you want to save this thing into the database?')) {
@@ -46,7 +45,8 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 }
 
 //would you like special characters?
-var userInput = window.confirm("Would you like special characters? !, @, #, $, %, ^, &, *")
+
+var userInput = window.confirm("Would you like special characters? (!, @, #, $, %, ^, &, *")
 console.log("User entered: "+ userInput);
 const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*' ];
 if (confirm('Are you sure you want to save this thing into the database?')) {
@@ -55,7 +55,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 } else {
   console.log('Answer was not saved to the database.');
 }
-
+}
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
 
