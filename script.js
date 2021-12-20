@@ -2,6 +2,7 @@
 function generatePassword() {
 
 var myPass= "";
+
   console.log("In Generate Password");
   var userInput = window.prompt("How many characters would you like? Choose between 8-128.")
   console.log("User entered: "+ userInput);
