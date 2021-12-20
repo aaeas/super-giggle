@@ -57,15 +57,26 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 } else {
   console.log('Answer was not saved to the database.');
 }
-for (let i = 0; i < 1; i++) {
-  console.log('How many characters would you like? Choose between 8-128.');
-  console.log('Would you like capital letters?')
-  console.log('Would you like lowercase letters?')
-  console.log('Would you like numbers? (0-9)')
-  console.log('Would you like special characters? (!, @, #, $, %, ^, &, *)')
+
 }
-return myPass;
+for (let i = 0; i < 128; i++) {
+  text += userInput[i] + "<br>";
 }
+for (let i = 0, len = upperCaseLetters.length, text = ""; i < len; i++) {
+  text += upperCaseLetters[i] + "<br>";
+}
+for (let i = 0, len = lowerCaseLetters.length, text = ""; i < len; i++) {
+  text += lowerCaseLetters[i] + "<br>";
+}
+for (let i = 0, len = numbers.length, text = ""; i < len; i++) {
+  text += numbers[i] + "<br>";
+}
+for (let i = 0, len = specialCharacters.length, text = ""; i < len; i++) {
+  text += specialCharacters[i] + "<br>";
+
+  return myPass;
+}  
+
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
 
