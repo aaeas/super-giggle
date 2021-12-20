@@ -60,7 +60,7 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
 }
 
 
-for (let i = 0; i < 128; i++) {
+for (let i = 0; i < 128 >8; i++) {
   text += userInput[i] + "<br>";
 }
 for (let i = 0, len = upperCaseLetters.length, text = ""; i < len; i++) {
