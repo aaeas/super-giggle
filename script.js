@@ -74,11 +74,11 @@ for (let i = 0, len = lowerCaseLetters.length, text = ""; i < len; i++) {
 }
 for (let i = 0, len = numbers.length, text = ""; i < len; i++) {
   text += numbers[i] + "<br>";
-  console.log('number');
+  console.log('numbers');
 }
 for (let i = 0, len = specialCharacters.length, text = ""; i < len; i++) {
   text += specialCharacters[i] + "<br>";
-  console.log('special character');
+  console.log('special characters');
 }  
 
 return myPass;
